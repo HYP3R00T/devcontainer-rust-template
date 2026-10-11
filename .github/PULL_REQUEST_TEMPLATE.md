@@ -16,9 +16,9 @@
 
 <!-- Map each source-issue criterion to concrete evidence. Remove this table only when no accepted issue applies. -->
 
-| Acceptance criterion | Evidence | Result |
-| --- | --- | --- |
-| | | Pass / Fail / Unverified |
+| Acceptance criterion | Evidence | Result                   |
+| -------------------- | -------- | ------------------------ |
+|                      |          | Pass / Fail / Unverified |
 
 ## Verification
 
