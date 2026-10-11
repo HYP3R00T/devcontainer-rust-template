@@ -34,36 +34,14 @@ An issue is ready for implementation when it has one observable outcome, relevan
 testable acceptance criteria, exact available verification, explicit dependencies, no unresolved material decision,
 and clear non-goals. Newly tracked work begins in the configured GitHub Project's `Backlog` state.
 
-## Refine and deliver issues with a coding agent
+## Work with a coding agent
 
-Trusted checkouts include two manually invoked, Agent Skills-compatible workflows. Reload project skills through
-your client when the checkout gained or changed a skill after the session started.
+Give the agent the issue URL, agreed scope, acceptance criteria, and required verification. Resolve material
+product or technical decisions with the maintainer before implementation, and review the agent's changes and
+verification results before submitting a pull request.
 
-Use `refine-issue` with one full GitHub issue URL to inspect a backlog issue against live repository evidence,
-resolve only material readiness gaps, structure the issue, and move it to `Ready`:
-
-```text
-refine-issue https://github.com/OWNER/REPOSITORY/issues/123
-```
-
-If a product or technical decision remains, the skill leaves the issue unchanged in `Backlog` and asks for that
-decision. It never implements the issue or changes repository files.
-
-After refinement and maintainer approval, invoke `issue-to-pr` separately with the same URL:
-
-```text
-issue-to-pr https://github.com/OWNER/REPOSITORY/issues/123
-```
-
-The delivery skill validates live issue and Project state, moves the item through `In Progress`, creates or resumes
-an isolated issue worktree, implements and verifies the accepted outcome, and opens or updates one pull request. It
-stops at `In Review`; it never merges, enables auto-merge, marks the issue `Done`, publishes, or removes its branch
-or worktree.
-
-These workflows require a trusted checkout, authenticated GitHub CLI access, one unambiguous configured Project,
-and collaborator permission to push. They are not the fork contribution path for external contributors. Read
-[Agent-assisted issue delivery](docs/workflow/agent-delivery.md) for the complete authority boundaries and hosted
-setup requirements.
+Use your own fork unless you have collaborator access. Agent assistance does not grant repository permissions
+or replace maintainer approval; you remain responsible for the contribution under the responsibility rule above.
 
 ## Set up the project
 
