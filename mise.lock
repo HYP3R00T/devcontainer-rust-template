@@ -97,9 +97,9 @@ url_api = "https://api.github.com/repos/rvben/rumdl/releases/assets/625384622"
 provenance = "github-attestations"
 
 [[tools.rust]]
-version = "1.99.0"
+version = "stable"
 backend = "core:rust"
-specifiers = ["latest"]
+specifiers = ["stable"]
 
 [tools.rust.options]
 profile = "default"

@@ -5,9 +5,14 @@ icon: lucide/terminal
 # Initialize your Rust project
 
 The template has no Cargo manifest or starter package. Choose the structure your project needs.
-`mise.toml` requests the latest stable Rust with the default profile, which includes rustfmt, Clippy, and local Rust docs.
-`mise.lock` records the resolved version for consistent local and CI installs. Run `mise upgrade rust` to update Rust,
-then verify your project and commit the lockfile change.
+`rust-toolchain.toml` selects the stable Rust channel with the default profile, including rustfmt, Clippy, and local Rust docs.
+`mise.toml` enables Mise to read that file and install Rustup and the requested toolchain when needed. Run `mise install`
+after cloning. Keep Rust's channel, profile, components, and targets in `rust-toolchain.toml`, without a duplicate Rust entry
+under Mise's `[tools]`.
+
+Rustup also reads the same file when you run `cargo` directly. The `stable` channel moves over time; `mise.lock` does not
+freeze its compiler version. Run `mise upgrade rust` to update it, then verify your project. If you need an exact compiler
+version, set `channel` to that version in `rust-toolchain.toml`.
 
 ## Root package
 
