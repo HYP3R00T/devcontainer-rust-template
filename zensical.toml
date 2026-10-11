@@ -8,52 +8,6 @@ copyright = "Copyright &copy; 2026 HYP3R00T"
 
 nav = [
   { Home = "index.md" },
-  { Introduction = [
-    { "Why this template exists" = "introduction/why-template.md" },
-    { "The project model" = "introduction/project-model.md" },
-    { "Getting started" = "introduction/getting-started.md" },
-  ] },
-  { "Project foundation" = [
-    { Overview = "foundation/index.md" },
-    { "Dev Container" = "foundation/dev-container.md" },
-    { Mise = "foundation/mise.md" },
-    { "Project entry" = "foundation/project-entry.md" },
-    { "Agent guidance" = "foundation/agents-md.md" },
-    { EditorConfig = "foundation/editorconfig.md" },
-    { "Git attributes" = "foundation/git-attributes.md" },
-    { "Git ignore" = "foundation/git-ignore.md" },
-    { "Git hooks" = [
-      { Overview = "foundation/git-hooks/index.md" },
-      { Providers = "foundation/git-hooks/providers/index.md" },
-      { "pre-commit-hooks" = "foundation/git-hooks/providers/pre-commit-hooks.md" },
-      { "rumdl-pre-commit" = "foundation/git-hooks/providers/rumdl-pre-commit.md" },
-      { Commitizen = "foundation/git-hooks/providers/commitizen.md" },
-      { shellcheck-py = "foundation/git-hooks/providers/shellcheck-py.md" },
-    ] },
-    { "GitHub Actions" = "foundation/github-actions.md" },
-    { Documentation = "foundation/documentation.md" },
-    { README = "foundation/readme.md" },
-    { "Community files" = "foundation/community-files.md" },
-    { License = "foundation/license.md" },
-  ] },
-  { "Development workflow" = [
-    { Overview = "workflow/index.md" },
-    { "Hard and soft constraints" = "workflow/constraints.md" },
-    { "Start a project" = "workflow/start-project.md" },
-    { "Iterative development" = "workflow/iteration.md" },
-    { "Agent-assisted delivery" = "workflow/agent-delivery.md" },
-    { "Priorities and dependencies" = "workflow/priorities.md" },
-    { Traceability = "workflow/traceability.md" },
-    { "Maintenance and releases" = "workflow/maintenance.md" },
-  ] },
-  { "GitHub setup" = [
-    { Overview = "github/index.md" },
-    { "Protect the default branch" = "github/protect-main.md" },
-    { "Issue workflow Project" = "github/project-workflow.md" },
-    { "Secure external contributions" = "github/secure-contributions.md" },
-    { Dependabot = "github/dependabot.md" },
-  ] },
-  { "Adapt the template" = "adaptation.md" },
 ]
 
 [project.theme]
