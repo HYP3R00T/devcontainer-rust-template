@@ -4,7 +4,7 @@
 
 # DevContainer Rust Template
 
-A minimal, reusable foundation for Rust projects with consistent development environments and maintainable workflows.
+Your next Rust project, with the setup already sorted. 🦀
 
 [Documentation](https://hyp3r00t.github.io/devcontainer-rust-template/) · [Use this template](https://github.com/HYP3R00T/devcontainer-rust-template/generate) · [Contributing](CONTRIBUTING.md)
 
@@ -13,46 +13,30 @@ A minimal, reusable foundation for Rust projects with consistent development env
 
 </div>
 
-<!-- Add a project screenshot or demonstration here. -->
+## Ready for your next idea
 
-## About
+A consistent development environment, useful tools, and repository checks—ready before your first line of Rust.
+Start with a single application, a library, or a workspace. You choose the structure.
 
-This repository provides a starting point for Rust projects that need a predictable Linux development environment across Windows, macOS, and Linux hosts. The Dev Container supplies the environment, while Mise provides a shared interface for installing and running project tools.
+| Develop                    | Check                     | Share                             |
+| -------------------------- | ------------------------- | --------------------------------- |
+| Dev Container + Mise       | Git hooks + repository CI | Documentation publishing          |
+| Rust, rustfmt, Clippy + uv | Markdown + shell checks   | Contribution guides + issue forms |
 
-The template includes repository checks, contribution guidance, documentation publishing, and Git attributes and ignore rules for Rust files. A Rust toolchain and Cargo project are not configured yet; add them along with the tests and tasks your project needs.
+## Get started
 
-## Features
+1. [Use this template](https://github.com/HYP3R00T/devcontainer-rust-template/generate) to create your repository.
+2. Open it in VS Code and select **Dev Containers: Reopen in Container**.
+3. [Initialize your Rust project](docs/rust-project.md) as a root package or workspace.
 
-- Reproducible development through a Docker-based Dev Container.
-- A Bash project entry script that configures Git hooks and Commitizen.
-- Tool and task management with [Mise](https://mise.jdx.dev/).
-- Local Git hooks and repository checks powered by [prek](https://prek.j178.dev/).
-- A pull-request quality gate that runs the same checks as local development.
-- Structured issue forms, contribution guidance, security reporting, and code ownership.
-- Rust-specific Git attributes and ignore rules for build output and tool artifacts.
-- Developer documentation published with [Zensical](https://zensical.org/).
-- Automated GitHub Actions dependency updates through Dependabot.
+The template includes the Rust toolchain; you add the Cargo project and its checks when you're ready.
 
-## Use this template
+## Explore the guides
 
-1. Select [**Use this template**](https://github.com/HYP3R00T/devcontainer-rust-template/generate) and create a repository.
-2. Clone the new repository and open it in Visual Studio Code with Docker running and the Dev Containers extension installed.
-3. Run **Dev Containers: Reopen in Container** from the Command Palette.
-4. Wait for the setup to install the declared tools and configure the Git hooks.
-5. Configure a Rust toolchain, initialize your Cargo project, and add its dependencies, tests, and checks.
-
-For environment requirements and verification commands, read [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## Contributing
-
-Contributions are welcome when they are focused, understandable, and maintainable. Read [CONTRIBUTING.md](CONTRIBUTING.md) before proposing a change.
+- [Getting started](docs/getting-started.md) — requirements, container setup, and tools.
+- [Rust project setup](docs/rust-project.md) — packages, workspaces, and Rust checks.
+- [Contributing](CONTRIBUTING.md) — verification and contribution workflow.
 
 ## License
 
-This project is available under the [MIT License](LICENSE).
-
-<div align="center">
-
-Developed with ❤️ by [HYP3R00T](https://github.com/HYP3R00T)
-
-</div>
+[MIT](LICENSE) · Developed with ❤️ by [HYP3R00T](https://github.com/HYP3R00T)
