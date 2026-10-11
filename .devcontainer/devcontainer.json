@@ -1,5 +1,5 @@
 {
-	"name": "devcontainer-template",
+	"name": "devcontainer-rust-template",
 	"build": {
 		"context": ".",
 		"dockerfile": "Dockerfile"
