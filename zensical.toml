@@ -1,8 +1,8 @@
 [project]
-site_name = "DevContainer Template"
-site_description = "A reusable foundation for consistent development environments and maintainable project workflows."
-repo_name = "HYP3R00T/devcontainer-template"
-repo_url = "https://github.com/HYP3R00T/devcontainer-template"
+site_name = "DevContainer Rust Template"
+site_description = "A reusable foundation for consistent Rust development environments and maintainable project workflows."
+repo_name = "HYP3R00T/devcontainer-rust-template"
+repo_url = "https://github.com/HYP3R00T/devcontainer-rust-template"
 site_author = "HYP3R00T"
 copyright = "Copyright &copy; 2026 HYP3R00T"
 
