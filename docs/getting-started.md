@@ -27,6 +27,7 @@ Mise declares the project tools and provides tasks for running them.
 - The project entry script configures Git hooks and Commitizen.
 - prek runs repository checks locally and in the pull-request quality gate.
 - rumdl and ShellCheck check Markdown and shell scripts.
+- Tombi formats TOML configuration files locally and in CI through the `tombi-format` hook.
 - Git attributes and ignore rules handle Rust source and build artifacts.
 - Zensical publishes developer documentation.
 - Dependabot updates GitHub Actions dependencies.
@@ -42,6 +43,16 @@ prek run --all-files
 
 The template's CI checks repository files. Add Rust checks after initializing your Cargo project, following the
 [Rust project setup guide](rust-project.md#add-rust-checks).
+
+## Format TOML
+
+```bash
+tombi format --offline
+tombi format --offline --check
+```
+
+The formatter uses `tombi.toml`, excludes generated Cargo and Mise lockfiles, and runs without schema lookups.
+The pre-commit hook pins its own Tombi version so local hooks and CI use the same formatter.
 
 ## Preview documentation
 
