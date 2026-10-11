@@ -2,14 +2,14 @@
 
 <div align="center">
 
-# DevContainer Template
+# DevContainer Rust Template
 
-A minimal, reusable foundation for consistent development environments and maintainable project workflows.
+A minimal, reusable foundation for Rust projects with consistent development environments and maintainable workflows.
 
-[Documentation](https://hyp3r00t.github.io/devcontainer-template/) · [Use this template](https://github.com/HYP3R00T/devcontainer-template/generate) · [Contributing](CONTRIBUTING.md)
+[Documentation](https://hyp3r00t.github.io/devcontainer-rust-template/) · [Use this template](https://github.com/HYP3R00T/devcontainer-rust-template/generate) · [Contributing](CONTRIBUTING.md)
 
-[![Quality Gate](https://img.shields.io/github/actions/workflow/status/HYP3R00T/devcontainer-template/ci.yaml?branch=main&style=for-the-badge&label=Quality%20Gate&logo=githubactions)](https://github.com/HYP3R00T/devcontainer-template/actions/workflows/ci.yaml)
-[![License: MIT](https://img.shields.io/github/license/HYP3R00T/devcontainer-template?style=for-the-badge&label=License)](LICENSE)
+[![Quality Gate](https://img.shields.io/github/actions/workflow/status/HYP3R00T/devcontainer-rust-template/ci.yml?branch=main&style=for-the-badge&label=Quality%20Gate&logo=githubactions)](https://github.com/HYP3R00T/devcontainer-rust-template/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/github/license/HYP3R00T/devcontainer-rust-template?style=for-the-badge&label=License)](LICENSE)
 
 </div>
 
@@ -17,31 +17,31 @@ A minimal, reusable foundation for consistent development environments and maint
 
 ## About
 
-This repository provides a language-agnostic starting point for projects that need a predictable Linux development environment across Windows, macOS, and Linux hosts. The Dev Container supplies the environment, while Mise provides a shared interface for installing and running project tools.
+This repository provides a starting point for Rust projects that need a predictable Linux development environment across Windows, macOS, and Linux hosts. The Dev Container supplies the environment, while Mise provides a shared interface for installing and running project tools.
 
-The template also establishes repository hygiene, automated checks, contribution expectations, and documentation publishing without choosing a programming language or application architecture. Derived projects can add only the runtimes and checks they actually need.
+The template includes repository checks, contribution guidance, documentation publishing, and Git attributes and ignore rules for Rust files. A Rust toolchain and Cargo project are not configured yet; add them along with the tests and tasks your project needs.
 
 ## Features
 
 - Reproducible development through a Docker-based Dev Container.
-- Cross-platform project entry scripts for Unix-like systems and Windows.
+- A Bash project entry script that configures Git hooks and Commitizen.
 - Tool and task management with [Mise](https://mise.jdx.dev/).
 - Local Git hooks and repository checks powered by [prek](https://prek.j178.dev/).
 - A pull-request quality gate that runs the same checks as local development.
 - Structured issue forms, contribution guidance, security reporting, and code ownership.
-- Manual, project-level skills for refining one issue and delivering it to a verified pull request.
+- Rust-specific Git attributes and ignore rules for build output and tool artifacts.
 - Developer documentation published with [Zensical](https://zensical.org/).
 - Automated GitHub Actions dependency updates through Dependabot.
 
 ## Use this template
 
-1. Select [**Use this template**](https://github.com/HYP3R00T/devcontainer-template/generate) and create a repository.
-2. Open the new repository in Visual Studio Code.
+1. Select [**Use this template**](https://github.com/HYP3R00T/devcontainer-rust-template/generate) and create a repository.
+2. Clone the new repository and open it in Visual Studio Code with Docker running and the Dev Containers extension installed.
 3. Run **Dev Containers: Reopen in Container** from the Command Palette.
 4. Wait for the setup to install the declared tools and configure the Git hooks.
-5. Add the runtimes, dependencies, checks, and tasks required by the project.
+5. Configure a Rust toolchain, initialize your Cargo project, and add its dependencies, tests, and checks.
 
-For environment requirements and verification commands, read the [documentation](https://hyp3r00t.github.io/devcontainer-template/).
+For environment requirements and verification commands, read [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Contributing
 
