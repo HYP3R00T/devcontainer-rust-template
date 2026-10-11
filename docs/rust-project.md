@@ -30,10 +30,11 @@ and `publish = false` for a package that should stay private.
 First create the initial package from the repository root:
 
 ```bash
-cargo new --bin crates/my-app
+cargo new --bin --vcs none crates/my-app
 ```
 
-For a library instead, use `cargo new --lib crates/my-lib`.
+For a library instead, use `cargo new --lib --vcs none crates/my-lib`.
+`--vcs none` prevents Cargo from creating a nested Git repository; packages use the project's existing repository.
 Then manually create a root `Cargo.toml` containing:
 
 ```toml
@@ -51,7 +52,7 @@ and add `license.workspace = true`. Set `publish = false` for packages that shou
 Keep at least one package in the workspace.
 
 `crates/` is a directory convention, not the workspace's name. The root manifest defines the workspace.
-Add more packages with `cargo new --bin crates/my-cli` or `cargo new --lib crates/my-lib`.
+Add more packages with `cargo new --bin --vcs none crates/my-cli` or `cargo new --lib --vcs none crates/my-lib`.
 The `crates/*` pattern includes them automatically, so you don't need to edit the root manifest for each addition.
 Check each package's manifest for the shared edition and license settings.
 
