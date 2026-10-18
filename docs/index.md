@@ -2,7 +2,7 @@
 icon: lucide/container
 ---
 
-# DevContainer Rust Template
+# Rust Project Template
 
 A reusable starting point for building understandable, auditable, and maintainable projects.
 

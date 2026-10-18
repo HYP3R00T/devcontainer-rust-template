@@ -2,14 +2,14 @@
 
 <div align="center">
 
-# DevContainer Rust Template
+# Rust Project Template
 
 Your next Rust project, with the setup already sorted. 🦀
 
-[Documentation](https://hyp3r00t.github.io/devcontainer-rust-template/) · [Use this template](https://github.com/HYP3R00T/devcontainer-rust-template/generate) · [Contributing](CONTRIBUTING.md)
+[Documentation](https://hyp3r00t.github.io/rust-project-template/) · [Use this template](https://github.com/HYP3R00T/rust-project-template/generate) · [Contributing](CONTRIBUTING.md)
 
-[![Quality Gate](https://img.shields.io/github/actions/workflow/status/HYP3R00T/devcontainer-rust-template/ci.yml?branch=main&style=for-the-badge&label=Quality%20Gate&logo=githubactions)](https://github.com/HYP3R00T/devcontainer-rust-template/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/github/license/HYP3R00T/devcontainer-rust-template?style=for-the-badge&label=License)](LICENSE)
+[![Quality Gate](https://img.shields.io/github/actions/workflow/status/HYP3R00T/rust-project-template/ci.yml?branch=main&style=for-the-badge&label=Quality%20Gate&logo=githubactions)](https://github.com/HYP3R00T/rust-project-template/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/github/license/HYP3R00T/rust-project-template?style=for-the-badge&label=License)](LICENSE)
 
 </div>
 
@@ -25,7 +25,7 @@ Start with a single application, a library, or a workspace. You choose the struc
 
 ## Get started
 
-1. [Use this template](https://github.com/HYP3R00T/devcontainer-rust-template/generate) to create your repository.
+1. [Use this template](https://github.com/HYP3R00T/rust-project-template/generate) to create your repository.
 2. Open it in VS Code and select **Dev Containers: Reopen in Container**.
 3. [Initialize your Rust project](docs/rust-project.md) as a root package or workspace.
 

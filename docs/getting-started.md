@@ -11,7 +11,7 @@ opening the project. On Windows, use Docker Desktop with its WSL 2 backend.
 
 ## Create your repository
 
-1. Select [Use this template](https://github.com/HYP3R00T/devcontainer-rust-template/generate) and create a repository.
+1. Select [Use this template](https://github.com/HYP3R00T/rust-project-template/generate) and create a repository.
 2. Clone the new repository and open it in Visual Studio Code.
 3. Run **Dev Containers: Reopen in Container** from the Command Palette.
 4. Wait for setup to install the declared tools and configure Git hooks.
@@ -60,5 +60,5 @@ The pre-commit hook pins its own Tombi version so local hooks and CI use the sam
 mise run docs
 ```
 
-See the [contribution guide](https://github.com/HYP3R00T/devcontainer-rust-template/blob/main/CONTRIBUTING.md)
+See the [contribution guide](https://github.com/HYP3R00T/rust-project-template/blob/main/CONTRIBUTING.md)
 for the complete contribution workflow.
